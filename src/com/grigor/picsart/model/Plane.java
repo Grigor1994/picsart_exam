@@ -40,8 +40,10 @@ public class Plane {
     public void setYear(int year) {
         if (year >= 1903 && year <= 2020) {
             this.year = year;
+        }else {
+            System.out.println("Please input correct year.");
+
         }
-        System.out.println("Please input correct year.");
     }
 
     public int getHours() {
@@ -52,7 +54,9 @@ public class Plane {
         if (hours > 0 && hours <= 10000) {
             this.hours = hours;
         }
-        System.out.println("Please input correct hours.");
+        else {
+            System.out.println("Please input correct hours.");
+        }
     }
 
     public boolean isMilitary() {
@@ -90,8 +94,9 @@ public class Plane {
     public void setWingspan(int wingspan) {
         if (wingspan >= 10 && wingspan <= 45) {
             this.wingspan = wingspan;
+        }else {
+            System.out.println("Please input correct number.");
         }
-        System.out.println("Please input correct number.");
     }
 
     public int getTopSpeed() {
@@ -101,8 +106,9 @@ public class Plane {
     public void setTopSpeed(int topSpeed) {
         if (topSpeed > 0 && topSpeed <= 1000) {
             this.topSpeed = topSpeed;
+        }else {
+            System.out.println("Please input correct number.");
         }
-        System.out.println("Please input correct number.");
     }
 
     public int getSeats() {
