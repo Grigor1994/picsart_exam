@@ -95,24 +95,34 @@ public class AirportTest {
         System.out.println("Print plane cost and top speed");
         planeService.printCostAndTopSpeed(plane1);
         System.out.println("----------------------------------------------");
+        System.out.println("The plane which one is newer ");
         planeService.printNewerPlane(plane1, plane2);
         System.out.println("----------------------------------------------");
+        System.out.println("The model of the plane which has bigger wingspan");
         planeService.getBiggerWingSpanPlane(plane1, plane2);
         System.out.println("----------------------------------------------");
+        System.out.println("The plane which has highest cost");
         planeService.printHighestCostPlane(plane1, plane2, plane3);
         System.out.println("----------------------------------------------");
+        System.out.println("print country of the plane with smallest seats count");
         planeService.printSmallestSeatsCountOfPlane(plane1, plane2, plane3);
         System.out.println("----------------------------------------------");
+        System.out.println("print all not military planes.");
         planeService.printAllNotMilitaryPlanes(planesArray);
         System.out.println("----------------------------------------------");
+        System.out.println("print all military planes which were in air more than 100 hours.");
         planeService.printMilitaryPlane(planesArray);
         System.out.println("----------------------------------------------");
+        System.out.println("the plane with minimal weight");
         planeService.printPlaneWithMinimalWeight(planesArray);
         System.out.println("----------------------------------------------");
+        System.out.println("the plane with minimal cost from all military planes");
         planeService.printMilitaryPlaneWithMinimalCost(planesArray);
         System.out.println("----------------------------------------------");
+        System.out.println("print planes in ascending form order by year");
         planeService.printPlanesAscOrderByYear(planesArray);
         System.out.println("----------------------------------------------");
+        System.out.println(" print not military planes in descending form order by number of seats.");
         planeService.printNotMilitaryPlanesDescOrderBySeats(planesArray);
     }
 }
